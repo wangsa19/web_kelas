@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scroll-smooth {
+    behavior: smooth;
+}
+
+body {
+    font-family: "Lucida Sans Typewriter", monospace;
+    text-rendering: optimizeLegibility;
+}
+
+/* start: header */
+.navbar-fixed {
+    @apply fixed z-[9999] bg-white bg-opacity-20;
+    backdrop-filter: blur(10px);
+    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.hamburger-line {
+    @apply w-[30px] h-[2px] my-2 block bg-primary;
+}
+
+.hamburger-active>span:nth-child(1) {
+    @apply rotate-45;
+}
+
+.hamburger-active>span:nth-child(2) {
+    @apply scale-0;
+}
+
+.hamburger-active>span:nth-child(3) {
+    @apply -rotate-45;
+}
+
+.nav-active {
+    @apply text-white rounded-md bg-primary;
+}
+
+.btn-primary {
+    @apply font-medium px-4 py-2 mt-8 xl:mt-20 bg-white border border-primary rounded-lg;
+}
+
+.btn-primary:hover {
+    @apply transition-all duration-300 ease-in-out;
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 1);
+}
+
+.btn-primary:focus {
+    @apply border-2 border-primary;
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 1);
+}
+
+/* end: header */
+
+/* start: main */
+/* section: hero */
+.card-hero {
+    @apply w-[80px] rounded-2xl bg-cover cursor-pointer overflow-hidden my-[10px] flex items-end shadow-md transition-all duration-600;
+}
+
+.radio-check:checked+label {
+    @apply w-[600px];
+}
+
+/* endsection: hero */
+/* section: katakata */
+.wrapper {
+    @apply max-w-[1100px] w-full mx-auto relative;
+}
+
+.wrapper>i {
+    @apply h-[50px] w-[50px] bg-white text-center leading-[50px] rounded-[50%] cursor-pointer absolute top-[50%] -translate-y-[50%] shadow-md;
+}
+
+.wrapper>i:first-child {
+    @apply -left-5;
+}
+
+.wrapper>i:last-child {
+    @apply -right-5;
+}
+
+.wrapper>.carousel {
+    @apply grid grid-flow-col gap-4 scroll-smooth overflow-x-auto;
+    grid-auto-columns: calc((100% / 4) - 12px);
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.carousel> :where(.card, .img) {
+    @apply flex items-center justify-center;
+}
+
+.carousel.no-transition {
+    @apply scroll-auto;
+}
+
+.carousel.dragging {
+    @apply snap-none;
+}
+
+.carousel.dragging .card {
+    @apply cursor-grab select-none;
+}
+
+.carousel>.card {
+    @apply snap-start h-[342px] list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4;
+}
+
+.carousel>.card>.sub-card {
+    @apply bg-white w-full h-full rounded-xl mb-2 flex cursor-pointer items-center justify-center flex-col p-4 text-primary;
+}
+
+.card>h2 {
+    @apply font-medium text-lg lg:text-2xl mt-1;
+}
+
+.card>span {
+    @apply text-[#6a6d78] text-base sm:text-lg lg:text-xl text-center mb-auto mt-36;
+}
+
+@media screen and (max-width: 1024px) {
+    .wrapper>.carousel {
+        grid-auto-columns: calc((100% / 3) - 12px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper>.carousel {
+        grid-auto-columns: calc((100% / 2) - 12px);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .wrapper>.carousel {
+        grid-auto-columns: 100%;
+    }
+}
+
+/* endsection: katakata */
+/* end: main */

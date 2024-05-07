@@ -33,7 +33,7 @@
     {{-- start: Gallery --}}
     <section id="gallery">
         <div
-            class="max-w-full flex flex-wrap mt-10 md:mt-28 lg:mt-36 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 gap-y-3 sm:gap-y-4 lg:gap-y-4">
+            class="max-w-full flex flex-wrap mt-10 md:mt-28 lg:mt-36 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 gap-y-3 sm:gap-y-4 lg:gap-y-8">
             <div class="w-full text-center mb-3 lg:mb-4">
                 <h2 class="font-semibold text-sm sm:text-lg md:text-xl xl:text-2xl"><span
                         class="bg-amber-100 rounded-lg p-2 lg:p-3">Ngetrip</span> Nang <span
@@ -65,7 +65,7 @@
                 </div>
                 <div class="w-full md:w-1/2">
                     <div class="rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden min-h-[200px]">
-                        <div class="bg-[url('image/view-night-villa-l.jpg')] bg-cover">
+                        <div class="bg-[url('image/view-malang.jpg')] bg-cover">
                             <div class="h-[200px] sm:h-[300px] md:h-[200px] lg:h-[300px] w-full"></div>
                         </div>
                     </div>

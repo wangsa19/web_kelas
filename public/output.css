@@ -902,8 +902,8 @@ video {
   background-image: url('image/foto.jpg');
 }
 
-.bg-\[url\(\'image\/view-night-villa-l\.jpg\'\)\] {
-  background-image: url('image/view-night-villa-l.jpg');
+.bg-\[url\(\'image\/view-malang\.jpg\'\)\] {
+  background-image: url('image/view-malang.jpg');
 }
 
 .bg-\[url\(\'image\/view-villa-l\.jpg\'\)\] {
@@ -1568,6 +1568,10 @@ body {
 
   .lg\:gap-y-4 {
     row-gap: 1rem;
+  }
+
+  .lg\:gap-y-8 {
+    row-gap: 2rem;
   }
 
   .lg\:rounded-none {

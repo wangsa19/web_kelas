@@ -23,9 +23,8 @@
     <h1 class="font-thin flex justify-center text-2xl pb-5">Data Kelas D3 IT A</h1>
     {{-- Search e kek ono animasi yo sembarang,pokok e iso search arek sg pengen di stalker --}}
     <input type="search" placeholder="cari nama" class="float-right border-2 border-black mr-5">
-    {{-- List anggota kelas,tampilno nama kro nrp tok ae.Nah tugas mu gae o 1 form gae nampillno data e arek iku
-        sg isine nama lengkap,nrp,foto,alamat asli + domisili,kro deskripsi ne arek iku.Ntah njelasno isok bahasa opo ae
-        ta njelasno porto e wes sembuarang.Ngkok iki gae API ae,nah ngkok delok detail e cukup get by ID tok --}}
+    {{-- List anggota kelas,tampilno nama kro github tok ae.Nah tugas mu gae o modal gae nampillno data e arek iku
+        sg isine nama lengkap,nrp,foto,link sosmed.Ngkok iki gae db ae,nah ngkok delok detail e cukup get by ID tok --}}
     <div id="anggota" class="pt-20 px-10">
         <div id="1">
             <ul class="flex justify-between">

@@ -1,12 +1,16 @@
 @extends('layouts.app')
 @section('content')
+
+
     <div class="pb-10 h-screen">
         {{-- Iki isine mek button-button tok,ngkok mbok kek i bg yo sembarang sak imajinasi mu,mok kek i footer yo gpp --}}
         <div class="max-w-full flex flex-wrap mt-20 md:mt-28 lg:mt-36 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
             <h2 class="font-semibold text-xl sm:text-7xl md:text-[96px] lg:text-7xl ml-4 md:ml-12">Kenangan.</h2>
         </div>
+
         <div class="flex justify-center gap-1 md:gap-10 my-5 md:my-20 px-4">
-            <button id="btn-all" class="border boder-2 border-black px-3 md:px-6 md:py-1 rounded-xl text-[11px] md:text-sm">
+            <button id="btn-all"
+                class="border boder-2 border-black px-3 md:px-6 md:py-1 rounded-xl text-[11px] md:text-sm">
                 All
             </button>
             <button id="btn-lkmm-pratd" class="px-3 md:px-6 md:py-1 rounded-xl text-[10px] md:text-sm">
@@ -114,7 +118,7 @@
                     alt="gallery-photo" />
             </div>
         </div>
-        
+
         <div id="gallery-random"
             class="hidden grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-2 px-2 md:gap-10 md:px-20">
             <div>

@@ -6,7 +6,7 @@
         <div class="w-full lg:w-[90%] xl:w-[100%]">
             <div class="w-full flex flex-row">
                 <div class="w-full gap-y-6 sm:gap-y-8 md:gap-y-10 lg:gap-y-12 xl:gap-y-8">
-                    <h2 class="font-semibold sm:text-3xl md:text-[40px] lg:text-6xl">Kenalan Yuk !</h2>
+                    <h2 class="font-bold sm:text-3xl md:text-[40px] lg:text-6xl">Kenalan Yuk !</h2>
                 </div>
             </div>
         </div>
@@ -31,63 +31,63 @@
     </section>
 
     <section id="profiles">
-    <div class="w-full grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xl:px-20 lg:px-16 md:px-12 sm:px-0 mx-auto items-center justify-center mt-10 mb-16">
-        <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4 xl:my-2 md:my-2 mx-2">
+    <div class="w-full grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 xl:px-20 lg:px-16 md:px-12 sm:px-0 mx-auto items-center justify-center mt-10 mb-16 gap-2 md:gap-5 px-2">
+        <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4">
             <div class="bg-white w-full xl:h-full lg:h-full md:h-[190px] sm:h-32 rounded-xl mb-2 flex cursor-pointer items-center justify-center flex-col p-4 text-primary;">
                 <span class="text-[#6a6d78] text-base sm:text-lg lg:text-xl text-center mb-auto mt-36">Sembarang</span>
             </div>
             <h2 class="font-medium text-lg lg:text-2xl mt-1">Ragil</h2>
         </div>
-        <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4 xl:my-2 md:my-2 mx-2">
+        <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4">
             <div class="bg-white w-full xl:h-full lg:h-full md:h-[190px] sm:h-32 rounded-xl mb-2 flex cursor-pointer items-center justify-center flex-col p-4 text-primary;">
                 <span class="text-[#6a6d78] text-base sm:text-lg lg:text-xl text-center mb-auto mt-36">Sembarang</span>
             </div>
             <h2 class="font-medium text-lg lg:text-2xl mt-1">Ragil</h2>
         </div>
-        <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4 xl:my-2 md:my-2 mx-2">
+        <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4">
             <div class="bg-white w-full xl:h-full lg:h-full md:h-[190px] sm:h-32 rounded-xl mb-2 flex cursor-pointer items-center justify-center flex-col p-4 text-primary;">
                 <span class="text-[#6a6d78] text-base sm:text-lg lg:text-xl text-center mb-auto mt-36">Sembarang</span>
             </div>
             <h2 class="font-medium text-lg lg:text-2xl mt-1">Ragil</h2>
         </div>
-        <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4 xl:my-2 md:my-2 mx-2">
+        <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4">
             <div class="bg-white w-full xl:h-full lg:h-full md:h-[190px] sm:h-32 rounded-xl mb-2 flex cursor-pointer items-center justify-center flex-col p-4 text-primary;">
                 <span class="text-[#6a6d78] text-base sm:text-lg lg:text-xl text-center mb-auto mt-36">Sembarang</span>
             </div>
             <h2 class="font-medium text-lg lg:text-2xl mt-1">Ragil</h2>
         </div>
-        <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4 xl:my-2 md:my-2 mx-2">
+        <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4">
             <div class="bg-white w-full xl:h-full lg:h-full md:h-[190px] sm:h-32 rounded-xl mb-2 flex cursor-pointer items-center justify-center flex-col p-4 text-primary;">
                 <span class="text-[#6a6d78] text-base sm:text-lg lg:text-xl text-center mb-auto mt-36">Sembarang</span>
             </div>
             <h2 class="font-medium text-lg lg:text-2xl mt-1">Ragil</h2>
         </div>
 
-        <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4 xl:my-2 md:my-2 mx-2">
+        <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4">
             <div class="bg-white w-full xl:h-full lg:h-full md:h-[190px] sm:h-32 rounded-xl mb-2 flex cursor-pointer items-center justify-center flex-col p-4 text-primary;">
                 <span class="text-[#6a6d78] text-base sm:text-lg lg:text-xl text-center mb-auto mt-36">Sembarang</span>
             </div>
             <h2 class="font-medium text-lg lg:text-2xl mt-1">Ragil</h2>
         </div>
-        <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4 xl:my-2 md:my-2 mx-2">
+        <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4">
             <div class="bg-white w-full xl:h-full lg:h-full md:h-[190px] sm:h-32 rounded-xl mb-2 flex cursor-pointer items-center justify-center flex-col p-4 text-primary;">
                 <span class="text-[#6a6d78] text-base sm:text-lg lg:text-xl text-center mb-auto mt-36">Sembarang</span>
             </div>
             <h2 class="font-medium text-lg lg:text-2xl mt-1">Ragil</h2>
         </div>
-        <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4 xl:my-2 md:my-2 mx-2">
+        <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4">
             <div class="bg-white w-full xl:h-full lg:h-full md:h-[190px] sm:h-32 rounded-xl mb-2 flex cursor-pointer items-center justify-center flex-col p-4 text-primary;">
                 <span class="text-[#6a6d78] text-base sm:text-lg lg:text-xl text-center mb-auto mt-36">Sembarang</span>
             </div>
             <h2 class="font-medium text-lg lg:text-2xl mt-1">Ragil</h2>
         </div>
-        <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4 xl:my-2 md:my-2 mx-2">
+        <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4">
             <div class="bg-white w-full xl:h-full lg:h-full md:h-[190px] sm:h-32 rounded-xl mb-2 flex cursor-pointer items-center justify-center flex-col p-4 text-primary;">
                 <span class="text-[#6a6d78] text-base sm:text-lg lg:text-xl text-center mb-auto mt-36">Sembarang</span>
             </div>
             <h2 class="font-medium text-lg lg:text-2xl mt-1">Ragil</h2>
         </div>
-        <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4 xl:my-2 md:my-2 mx-2">
+        <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4">
             <div class="bg-white w-full xl:h-full lg:h-full md:h-[190px] sm:h-32 rounded-xl mb-2 flex cursor-pointer items-center justify-center flex-col p-4 text-primary;">
                 <span class="text-[#6a6d78] text-base sm:text-lg lg:text-xl text-center mb-auto mt-36">Sembarang</span>
             </div>

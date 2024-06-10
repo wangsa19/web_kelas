@@ -143,3 +143,13 @@ body {
 
 /* endsection: katakata */
 /* end: main */
+/* galery */
+.custom-file-input::file-selector-button {
+    background-color: #ff6d59;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    /* Tampilan sudut */
+    cursor: pointer;
+    /* Menjadikan kursor menjadi tangan saat diarahkan */
+}

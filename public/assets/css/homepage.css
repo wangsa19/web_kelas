@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.navbar{
+    height: 100px;
+    background-color: #4DB6E7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .navbar-logo{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.navbar .navbar-logo p{
+    font-weight: bold;
+    font-size: larger;
+    margin-left: 10px;
+}
+.navbar .navbar-list ul{
+    display: flex;
+    list-style: none;
+}
+.navbar .navbar-list ul li{
+    text-decoration: none;
+    margin-right: 20px;
+}
+.navbar .navbar-list ul li a{
+    padding: 15px;
+    background-color: white;
+    border-bottom: 5px solid grey;
+    border-right: 5px solid grey;
+    border-radius: 30px;
+    font-size: 17px;
+}
+#main-video {
+    position: fixed;
+    top: 2%;
+    left: 0;
+    width: 100vw;
+    height: 50;
+    object-fit: cover; 
+    z-index: -1;
+    background-size: cover;
+}

@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\GalleryController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,13 +18,8 @@ Route::get('/', function () {
     return view('main');
 });
 
-Route::get('/profile', function () {
-    return view('profile');
-});
-
-Route::get('/gallery', function () {
-    return view('gallery');
-});
-Route::get('/welcome', function () {
-    return view('welcome');
+Route::get('/profile', [ProfileController::class, 'index']);
+Route::get('/gallery', [GalleryController::class, 'index']);
+Route::get('/tes', function(){
+    return view('admin.dashboard');
 });

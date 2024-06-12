@@ -11,6 +11,6 @@ class ProfileController extends Controller
     }
 
     public function addProfile(){
-
+    return view('admin.add-profile');
     }
 }

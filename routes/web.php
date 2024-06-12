@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\DashboardController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,6 +22,6 @@ Route::get('/', function () {
 
 Route::get('/profile', [ProfileController::class, 'index']);
 Route::get('/gallery', [GalleryController::class, 'index']);
-Route::get('/tes', function(){
-    return view('admin.dashboard');
+Route::prefix('/admin')->group(function (){
+    Route::get('/dashboard',[DashboardController::class,'index'])->name('dashboard');
 });

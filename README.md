@@ -21,13 +21,17 @@
 
     cp .env.example .env
 
+4 . Run
+
+    php artisan storage:link
+
 4.Run
 
     php artisan key:generate
 
 5.Run
 
-    php artisan migrate
+    php artisan migrate:fresh --seed
 
 6.Run npm install
 

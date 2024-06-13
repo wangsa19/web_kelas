@@ -76,16 +76,22 @@
 
             <ul class="menu-inner py-1">
                 <li class="menu-item">
-                    <a href="" class="menu-link">
+                    <a href="{{route('dashboard')}}" class="menu-link">
                         <i class="menu-icon tf-icons bx bx-home-circle"></i>
                         <div data-i18n="Analytics">Dashboard</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="{{route('add-profile')}}" class="menu-link">
+                        <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                        <div data-i18n="Analytics">Add Profile</div>
                     </a>
                 </li>
                 <li class="menu-header small text-uppercase">
                     <span class="menu-header-text">Auth</span>
                 </li>
                 <li class="menu-item">
-                    <a href="" class="menu-link">
+                    <a href="{{route('logout')}}" class="menu-link">
                         <i class="menu-icon tf-icons"></i>
                         <div data-i18n="Analytics">Logout</div>
                     </a>

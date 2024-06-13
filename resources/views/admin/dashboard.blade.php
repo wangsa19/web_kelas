@@ -7,30 +7,34 @@
            <div class="card">
                <div class="card-header bg-secondary text-center text-white">Daftar Mahasiswa</div>
                <div class="card-body">
+                   @if (session('message'))
+                       <div class="alert alert-success mt-2" role="alert">
+                           {{ session('message') }}
+                       </div>
+                   @endif
                    <div class="table-responsive-lg">
                        <table class="table">
                            <thead>
                            <tr>
                                <th>#</th>
                                <th>FOTO</th>
-                               <th>NRP</th>
                                <th>NAMA</th>
                                <th>OPSI</th>
                            </tr>
                            </thead>
                            <tbody>
-                           <tr>
-                               <td>1</td>
-                               <td>
-                                   <img src="image/komting.jpg" height="60">
-                               </td>
-                               <td>3123500014</td>
-                               <td>Arva Zaki</td>
-                               <td>
-                                   <a href="" class="btn btn-warning btn-sm">Edit</a>
-                                   <a href="" class="btn btn-danger btn-sm">Delete</a>
-                               </td>
-                           </tr>
+                           @foreach($profil as $item)
+                               <tr>
+                                   <td>{{$loop->iteration}}</td>
+                                   <td>
+                                       <img src="{{asset('storage/foto-profil/' . $item->foto)}}" height="60">
+                                   </td>
+                                   <td>{{$item->nama}}</td>
+                                   <td>
+                                       <a href="{{route('delete-profile', $item->id)}}" class="btn btn-danger btn-sm">Delete</a>
+                                   </td>
+                               </tr>
+                           @endforeach
                            </tbody>
                        </table>
                    </div>

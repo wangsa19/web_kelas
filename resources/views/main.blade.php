@@ -86,42 +86,14 @@
                 <div class="wrapper">
                     <i id="left" class="fa-solid fa-angle-left"></i>
                     <ul class="carousel">
-                        <li class="card">
-                            <div class="sub-card">
-                                <span>Sembarang</span>
-                            </div>
-                            <h2>Ragil</h2>
-                        </li>
-                        <li class="card">
-                            <div class="sub-card">
-                                <span>Sembarang</span>
-                            </div>
-                            <h2>Ragil</h2>
-                        </li>
-                        <li class="card">
-                            <div class="sub-card">
-                                <span>Sembarang</span>
-                            </div>
-                            <h2>Ragil</h2>
-                        </li>
-                        <li class="card">
-                            <div class="sub-card">
-                                <span>Sembarang</span>
-                            </div>
-                            <h2>Ragil</h2>
-                        </li>
-                        <li class="card">
-                            <div class="sub-card">
-                                <span>Sembarang</span>
-                            </div>
-                            <h2>Ragil</h2>
-                        </li>
-                        <li class="card">
-                            <div class="sub-card">
-                                <span>Sembarang</span>
-                            </div>
-                            <h2>Ragil</h2>
-                        </li>
+                        @foreach($katakata as $item)
+                            <li class="card">
+                                <div class="sub-card">
+                                    {{$item->kata_kata}}
+                                </div>
+                                <h2>{{$item->nama}}</h2>
+                            </li>
+                        @endforeach
                     </ul>
                     <i id="right" class="fa-solid fa-angle-right"></i>
                 </div>

@@ -32,67 +32,14 @@
 
     <section id="profiles">
     <div class="w-full grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 xl:px-20 lg:px-16 md:px-12 sm:px-0 mx-auto items-center justify-center mt-10 mb-16 gap-2 md:gap-5 px-2">
-        <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4">
-            <div class="bg-white w-full xl:h-full lg:h-full md:h-[190px] sm:h-32 rounded-xl mb-2 flex cursor-pointer items-center justify-center flex-col p-4 text-primary;">
-                <span class="text-[#6a6d78] text-base sm:text-lg lg:text-xl text-center mb-auto mt-36">Sembarang</span>
+       @foreach($profil as $item)
+            <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4">
+                <div class="bg-white w-full xl:h-full lg:h-full md:h-[190px] sm:h-32 rounded-xl mb-2 flex cursor-pointer items-center justify-center flex-col p-4 text-primary;">
+                    <img src="{{asset('storage/foto-profil/' . $item->foto)}}" class="h-full w-full ">
+                </div>
+                <h2 class="font-medium text-lg lg:text-2xl mt-1">{{$item->nama}}</h2>
             </div>
-            <h2 class="font-medium text-lg lg:text-2xl mt-1">Ragil</h2>
-        </div>
-        <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4">
-            <div class="bg-white w-full xl:h-full lg:h-full md:h-[190px] sm:h-32 rounded-xl mb-2 flex cursor-pointer items-center justify-center flex-col p-4 text-primary;">
-                <span class="text-[#6a6d78] text-base sm:text-lg lg:text-xl text-center mb-auto mt-36">Sembarang</span>
-            </div>
-            <h2 class="font-medium text-lg lg:text-2xl mt-1">Ragil</h2>
-        </div>
-        <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4">
-            <div class="bg-white w-full xl:h-full lg:h-full md:h-[190px] sm:h-32 rounded-xl mb-2 flex cursor-pointer items-center justify-center flex-col p-4 text-primary;">
-                <span class="text-[#6a6d78] text-base sm:text-lg lg:text-xl text-center mb-auto mt-36">Sembarang</span>
-            </div>
-            <h2 class="font-medium text-lg lg:text-2xl mt-1">Ragil</h2>
-        </div>
-        <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4">
-            <div class="bg-white w-full xl:h-full lg:h-full md:h-[190px] sm:h-32 rounded-xl mb-2 flex cursor-pointer items-center justify-center flex-col p-4 text-primary;">
-                <span class="text-[#6a6d78] text-base sm:text-lg lg:text-xl text-center mb-auto mt-36">Sembarang</span>
-            </div>
-            <h2 class="font-medium text-lg lg:text-2xl mt-1">Ragil</h2>
-        </div>
-        <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4">
-            <div class="bg-white w-full xl:h-full lg:h-full md:h-[190px] sm:h-32 rounded-xl mb-2 flex cursor-pointer items-center justify-center flex-col p-4 text-primary;">
-                <span class="text-[#6a6d78] text-base sm:text-lg lg:text-xl text-center mb-auto mt-36">Sembarang</span>
-            </div>
-            <h2 class="font-medium text-lg lg:text-2xl mt-1">Ragil</h2>
-        </div>
-
-        <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4">
-            <div class="bg-white w-full xl:h-full lg:h-full md:h-[190px] sm:h-32 rounded-xl mb-2 flex cursor-pointer items-center justify-center flex-col p-4 text-primary;">
-                <span class="text-[#6a6d78] text-base sm:text-lg lg:text-xl text-center mb-auto mt-36">Sembarang</span>
-            </div>
-            <h2 class="font-medium text-lg lg:text-2xl mt-1">Ragil</h2>
-        </div>
-        <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4">
-            <div class="bg-white w-full xl:h-full lg:h-full md:h-[190px] sm:h-32 rounded-xl mb-2 flex cursor-pointer items-center justify-center flex-col p-4 text-primary;">
-                <span class="text-[#6a6d78] text-base sm:text-lg lg:text-xl text-center mb-auto mt-36">Sembarang</span>
-            </div>
-            <h2 class="font-medium text-lg lg:text-2xl mt-1">Ragil</h2>
-        </div>
-        <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4">
-            <div class="bg-white w-full xl:h-full lg:h-full md:h-[190px] sm:h-32 rounded-xl mb-2 flex cursor-pointer items-center justify-center flex-col p-4 text-primary;">
-                <span class="text-[#6a6d78] text-base sm:text-lg lg:text-xl text-center mb-auto mt-36">Sembarang</span>
-            </div>
-            <h2 class="font-medium text-lg lg:text-2xl mt-1">Ragil</h2>
-        </div>
-        <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4">
-            <div class="bg-white w-full xl:h-full lg:h-full md:h-[190px] sm:h-32 rounded-xl mb-2 flex cursor-pointer items-center justify-center flex-col p-4 text-primary;">
-                <span class="text-[#6a6d78] text-base sm:text-lg lg:text-xl text-center mb-auto mt-36">Sembarang</span>
-            </div>
-            <h2 class="font-medium text-lg lg:text-2xl mt-1">Ragil</h2>
-        </div>
-        <div class="border snap-start xl:h-[342px] lg:h-72 md:h-64 sm:h-40 list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4">
-            <div class="bg-white w-full xl:h-full lg:h-full md:h-[190px] sm:h-32 rounded-xl mb-2 flex cursor-pointer items-center justify-center flex-col p-4 text-primary;">
-                <span class="text-[#6a6d78] text-base sm:text-lg lg:text-xl text-center mb-auto mt-36">Sembarang</span>
-            </div>
-            <h2 class="font-medium text-lg lg:text-2xl mt-1">Ragil</h2>
-        </div>
+       @endforeach
     </div>
     </section>
 

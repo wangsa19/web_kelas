@@ -29,8 +29,8 @@ Route::prefix('/admin')->middleware('auth')->group(function (){
     Route::get('/delete-profile/${id}', [ProfileController::class, "delete"])->name('delete-profile');
 });
 
-Route::get('/login', [AuthController::class, 'login'])->name('login');
+Route::get('/login', [AuthController::class, 'login'])->name('login')->middleware('guest');
 Route::post('/login', [AuthController::class, 'signin'])->name('signin');
-Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+Route::get('/logout', [AuthController::class, 'logout'])->name('logout')->middleware('auth');;
 
 

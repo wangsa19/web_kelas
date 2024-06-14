@@ -199,6 +199,6 @@
             }
         })
     })
-</script> 
+</script>
 @endsection -->
 --}}

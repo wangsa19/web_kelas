@@ -671,10 +671,6 @@ video {
   margin-bottom: 0.75rem;
 }
 
-.mb-auto {
-  margin-bottom: auto;
-}
-
 .ml-4 {
   margin-left: 1rem;
 }
@@ -687,6 +683,14 @@ video {
   margin-right: 1.25rem;
 }
 
+.ms-2 {
+  margin-inline-start: 0.5rem;
+}
+
+.ms-auto {
+  margin-inline-start: auto;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -695,12 +699,16 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mt-20 {
   margin-top: 5rem;
 }
 
-.mt-36 {
-  margin-top: 9rem;
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .mt-4 {
@@ -711,12 +719,28 @@ video {
   margin-top: 10rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .block {
   display: block;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
+}
+
+.table {
+  display: table;
+}
+
+.table-row {
+  display: table-row;
 }
 
 .grid {
@@ -733,10 +757,6 @@ video {
 
 .h-12 {
   height: 3rem;
-}
-
-.h-40 {
-  height: 10rem;
 }
 
 .h-\[200px\] {
@@ -963,6 +983,11 @@ video {
   background-color: rgb(45 42 42 / var(--tw-bg-opacity));
 }
 
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
 .bg-transparent {
   background-color: transparent;
 }
@@ -986,16 +1011,6 @@ video {
 
 .bg-cover {
   background-size: cover;
-}
-
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.object-center {
-  -o-object-position: center;
-     object-position: center;
 }
 
 .p-2 {
@@ -1033,6 +1048,11 @@ video {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .py-2 {
@@ -1080,6 +1100,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .font-lucidaSans {
@@ -1155,15 +1179,6 @@ video {
 
 .font-thin {
   font-weight: 100;
-}
-
-.font-extrabold {
-  font-weight: 800;
-}
-
-.text-\[\#6a6d78\] {
-  --tw-text-opacity: 1;
-  color: rgb(106 109 120 / var(--tw-text-opacity));
 }
 
 .text-black {
@@ -1609,11 +1624,6 @@ body {
 }
 
 @media (min-width: 768px) {
-  .md\:my-2 {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-
   .md\:my-20 {
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -1864,11 +1874,6 @@ body {
     line-height: 1;
   }
 
-  .lg\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .lg\:shadow-none {
     --tw-shadow: 0 0 #0000;
     --tw-shadow-colored: 0 0 #0000;
@@ -1877,11 +1882,6 @@ body {
 }
 
 @media (min-width: 1280px) {
-  .xl\:my-2 {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-
   .xl\:h-\[342px\] {
     height: 342px;
   }

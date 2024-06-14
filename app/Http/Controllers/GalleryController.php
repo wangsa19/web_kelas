@@ -10,9 +10,10 @@ class GalleryController extends Controller
 {
     public function index()
     {
+        $title = 'gallery';
         $galleries = Gallery::all();
         $categories = Gallery::distinct()->pluck('category');
-        return view('gallery', compact('galleries', 'categories'));
+        return view('gallery', compact('galleries', 'categories', 'title'));
     }
 
     public function admin()

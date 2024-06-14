@@ -10,8 +10,9 @@ class ProfileController extends Controller
 {
     public function index()
     {
+        $title = 'profil';
         $profil = Profile::all();
-        return view('profile', compact('profil'));
+        return view('profile', compact('profil', 'title'));
     }
     public function create()
     {

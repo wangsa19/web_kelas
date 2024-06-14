@@ -13,13 +13,13 @@
                 <nav id="nav-menu"
                     class="hidden absolute py-3 bg-white shadow-xl border border-slate-200 lg:border-none rounded-[18px] max-w-[200px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
                     <ul class="block px-3 lg:flex">
-                        <li class="text-dark rounded-lg nav-active">
+                        <li class="text-dark rounded-lg {{ $title == 'main' ? 'nav-active' : '' }}">
                             <a href="/" class="text-base py-2 mx-6 flex">Home</a>
                         </li>
-                        <li class="text-dark rounded-lg">
+                        <li class="text-dark rounded-lg {{ $title == 'profil' ? 'nav-active' : '' }}">
                             <a href="/profile" class="text-base py-2 mx-6 flex">Profile</a>
                         </li>
-                        <li class="text-dark rounded-lg">
+                        <li class="text-dark rounded-lg {{ $title == 'gallery' ? 'nav-active' : '' }}">
                             <a href="/gallery" class="text-base py-2 mx-6 flex">Gallery</a>
                         </li>
                     </ul>

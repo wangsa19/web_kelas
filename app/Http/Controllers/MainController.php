@@ -7,8 +7,10 @@ use Illuminate\Http\Request;
 
 class MainController extends Controller
 {
-    public function index(){
+    public function index()
+    {
+        $title = 'main';
         $katakata = Profile::all();
-        return view('main', compact('katakata'));
+        return view('main', compact('katakata', 'title'));
     }
 }

@@ -59,7 +59,7 @@ class GalleryController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'photo' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
             'category' => 'required',
         ]);
 
@@ -67,6 +67,7 @@ class GalleryController extends Controller
 
         if ($request->hasFile('photo')) {
             $path = $request->file('photo')->store('public/gallery');
+            $path = str_replace('public/gallery/', '', $path);
             $gallery->photo = $path;
         }
 
@@ -75,7 +76,6 @@ class GalleryController extends Controller
 
         return redirect()->route('admin.galery')->with('success_message', 'Foto Berhasil di Edit.');
     }
-
 
     public function delete($id)
     {

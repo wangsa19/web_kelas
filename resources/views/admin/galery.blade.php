@@ -65,6 +65,10 @@
     @if(session('error_message'))
     alert("{{ session('error_message') }}");
     @endif
+    
+    @if(session('message'))
+    alert("{{ session('message') }}");
+    @endif
 </script>
 @endsection
 {{--

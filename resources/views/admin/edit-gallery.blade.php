@@ -25,7 +25,7 @@
                             @if ($gallery->photo)
                             <input type="hidden" name="current_photo" value="{{ $gallery->photo }}">
                             <p>Current Photo:</p>
-                            <img src="{{ asset('storage/public/gallery/' . $gallery->photo) }}" alt="Current Photo" style="max-width: 200px;">
+                            <img src="{{ asset('storage/public/gallery/' . $gallery->photo) }}" alt="Photo" width="100">
                             @endif
                         </div>
                         <div class="mb-3">

@@ -34,7 +34,7 @@ Route::prefix('/admin')->middleware('auth')->group(function () {
     Route::get('/gallery/add', [GalleryController::class, 'add'])->name('admin.gallery.add');
     Route::post('/gallery/store', [GalleryController::class, 'store'])->name('admin.gallery.store');
     Route::get('/gallery/edit/{id}', [GalleryController::class, 'edit'])->name('admin.gallery.edit');
-    Route::get('/gallery/update/{id}', [GalleryController::class, 'update'])->name('admin.gallery.update');
+    Route::put('/gallery/update/{id}', [GalleryController::class, 'update'])->name('admin.gallery.update');
     Route::delete('/gallery/delete/{id}', [GalleryController::class, 'delete'])->name('admin.gallery.delete');
 });
 

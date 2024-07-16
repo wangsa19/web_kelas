@@ -588,10 +588,6 @@ video {
   }
 }
 
-.fixed {
-  position: fixed;
-}
-
 .absolute {
   position: absolute;
 }
@@ -604,20 +600,12 @@ video {
   bottom: 0px;
 }
 
-.bottom-16 {
-  bottom: 4rem;
-}
-
 .left-0 {
   left: 0px;
 }
 
 .right-4 {
   right: 1rem;
-}
-
-.right-5 {
-  right: 1.25rem;
 }
 
 .top-0 {
@@ -630,10 +618,6 @@ video {
 
 .z-10 {
   z-index: 10;
-}
-
-.z-50 {
-  z-index: 50;
 }
 
 .float-right {
@@ -669,6 +653,10 @@ video {
 
 .mb-3 {
   margin-bottom: 0.75rem;
+}
+
+.me-4 {
+  margin-inline-end: 1rem;
 }
 
 .ml-4 {
@@ -723,6 +711,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .block {
   display: block;
 }
@@ -755,16 +747,12 @@ video {
   height: 2.5rem;
 }
 
-.h-12 {
-  height: 3rem;
-}
-
 .h-\[200px\] {
   height: 200px;
 }
 
-.h-\[400px\] {
-  height: 400px;
+.h-\[250px\] {
+  height: 250px;
 }
 
 .h-\[800px\] {
@@ -786,10 +774,6 @@ video {
 
 .min-h-\[200px\] {
   min-height: 200px;
-}
-
-.w-12 {
-  width: 3rem;
 }
 
 .w-48 {
@@ -818,11 +802,6 @@ video {
 
 .origin-top-left {
   transform-origin: top left;
-}
-
-.translate-y-0 {
-  --tw-translate-y: 0px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
@@ -938,11 +917,6 @@ video {
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
-.border-primary {
-  --tw-border-opacity: 1;
-  border-color: rgb(45 42 42 / var(--tw-border-opacity));
-}
-
 .border-red-300 {
   --tw-border-opacity: 1;
   border-color: rgb(252 165 165 / var(--tw-border-opacity));
@@ -1011,6 +985,10 @@ video {
 
 .bg-cover {
   background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .p-2 {
@@ -1084,6 +1062,10 @@ video {
 
 .pe-10 {
   padding-inline-end: 2.5rem;
+}
+
+.ps-4 {
+  padding-inline-start: 1rem;
 }
 
 .pt-10 {
@@ -1220,12 +1202,6 @@ video {
   transition-duration: 150ms;
 }
 
-.transition-all {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .duration-200 {
   transition-duration: 200ms;
 }
@@ -1250,8 +1226,6 @@ body {
   font-family: "Lucida Sans Typewriter", monospace;
   text-rendering: optimizeLegibility;
 }
-
-/* start: header */
 
 .navbar-fixed {
   position: fixed;
@@ -1332,12 +1306,6 @@ body {
   box-shadow: 4px 4px 0 rgba(0, 0, 0, 1);
 }
 
-/* end: header */
-
-/* start: main */
-
-/* section: hero */
-
 .card-hero {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -1346,7 +1314,7 @@ body {
   cursor: pointer;
   align-items: flex-end;
   overflow: hidden;
-  border-radius: 1rem;
+  border-radius: 0.75rem;
   background-size: cover;
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -1356,13 +1324,39 @@ body {
   transition-duration: 600ms;
 }
 
+@media (min-width: 640px) {
+  .card-hero {
+    border-radius: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-hero {
+    width: 100px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .card-hero {
+    width: 120px;
+  }
+}
+
 .radio-check:checked+label {
   width: 600px;
 }
 
-/* endsection: hero */
+@media (min-width: 768px) {
+  .radio-check:checked+label {
+    width: 500px;
+  }
+}
 
-/* section: katakata */
+@media (min-width: 1280px) {
+  .radio-check:checked+label {
+    width: 800px;
+  }
+}
 
 .wrapper {
   position: relative;
@@ -1524,20 +1518,12 @@ body {
   }
 }
 
-/* endsection: katakata */
-
-/* end: main */
-
-/* galery */
-
 .custom-file-input::file-selector-button {
   background-color: #ff6d59;
   color: #fff;
   border: none;
   border-radius: 5px;
-  /* Tampilan sudut */
   cursor: pointer;
-  /* Menjadikan kursor menjadi tangan saat diarahkan */
 }
 
 .\*\:px-5 > * {
@@ -1555,12 +1541,11 @@ body {
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
-.group:hover .group-hover\:-translate-y-2 {
-  --tw-translate-y: -0.5rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 @media (min-width: 640px) {
+  .sm\:me-0 {
+    margin-inline-end: 0px;
+  }
+
   .sm\:mt-2 {
     margin-top: 0.5rem;
   }
@@ -1579,6 +1564,10 @@ body {
 
   .sm\:h-\[300px\] {
     height: 300px;
+  }
+
+  .sm\:h-\[400px\] {
+    height: 400px;
   }
 
   .sm\:grid-cols-2 {
@@ -1607,6 +1596,10 @@ body {
     padding-right: 2rem;
   }
 
+  .sm\:ps-0 {
+    padding-inline-start: 0px;
+  }
+
   .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -1631,6 +1624,14 @@ body {
 
   .md\:ml-12 {
     margin-left: 3rem;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .md\:mt-16 {
+    margin-top: 4rem;
   }
 
   .md\:mt-20 {
@@ -1667,6 +1668,10 @@ body {
 
   .md\:h-\[200px\] {
     height: 200px;
+  }
+
+  .md\:h-\[375px\] {
+    height: 375px;
   }
 
   .md\:w-1\/2 {
@@ -1727,6 +1732,15 @@ body {
   .md\:py-1 {
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
+  }
+
+  .md\:pe-4 {
+    padding-inline-end: 1rem;
+  }
+
+  .md\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
   }
 
   .md\:text-\[40px\] {
@@ -1797,16 +1811,24 @@ body {
     height: 300px;
   }
 
+  .lg\:h-\[400px\] {
+    height: 400px;
+  }
+
   .lg\:h-full {
     height: 100%;
   }
 
-  .lg\:w-\[300px\] {
-    width: 300px;
+  .lg\:w-2\/5 {
+    width: 40%;
   }
 
-  .lg\:w-\[49\%\] {
-    width: 49%;
+  .lg\:w-3\/5 {
+    width: 60%;
+  }
+
+  .lg\:w-\[300px\] {
+    width: 300px;
   }
 
   .lg\:w-\[90\%\] {
@@ -1859,6 +1881,10 @@ body {
     padding-right: 4rem;
   }
 
+  .lg\:pe-8 {
+    padding-inline-end: 2rem;
+  }
+
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1886,20 +1912,16 @@ body {
     height: 342px;
   }
 
+  .xl\:h-\[500px\] {
+    height: 500px;
+  }
+
   .xl\:h-full {
     height: 100%;
   }
 
   .xl\:w-\[100\%\] {
     width: 100%;
-  }
-
-  .xl\:w-\[34\%\] {
-    width: 34%;
-  }
-
-  .xl\:w-\[60\%\] {
-    width: 60%;
   }
 
   .xl\:grid-cols-5 {

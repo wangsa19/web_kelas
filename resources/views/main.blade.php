@@ -1,39 +1,36 @@
 @extends('layouts.app')
 @section('content')
-    {{-- start: Hero Section --}}
     <section id="hero">
-        <div
-            class="max-w-full flex flex-wrap mt-20 md:mt-28 lg:mt-36 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 bg-white gap-y-4 sm:gap-y-4 md:gap-y-6 lg:gap-y-0 lg:gap-x-4 xl:gap-x-12">
-            <div class="w-full lg:w-[49%] xl:w-[34%]">
+        <div class="max-w-full flex flex-wrap items-center mt-20 md:mt-28 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 bg-white">
+            <div class="w-full md:w-1/2 lg:w-2/5">
                 <div class="w-full flex flex-wrap">
-                    <div class="w-full grid grid-cols-1 gap-y-6 sm:gap-y-8 md:gap-y-10 lg:gap-y-12 xl:gap-y-8">
-                        <h2 class="font-semibold text-5xl sm:text-7xl md:text-[96px] lg:text-7xl">Watch.</h2>
+                    <div
+                        class="w-full grid grid-cols-1 gap-y-6 sm:gap-y-8 md:gap-y-10 lg:gap-y-12 xl:gap-y-8 md:pe-4 lg:pe-8">
+                        <h2 class="font-semibold text-5xl sm:text-7xl md:text-7xl lg:text-7xl ps-4 sm:ps-0">Watch.</h2>
                         <h2
-                            class="ml-auto font-semibold text-5xl sm:text-7xl md:text-[96px] lg:text-7xl bg-blue-100 rounded-lg p-2">
+                            class="ml-auto font-semibold text-5xl sm:text-7xl md:text-7xl lg:text-7xl bg-blue-100 rounded-lg p-2 me-4 sm:me-0">
                             Learn.</h2>
-                        <h2 class="font-semibold text-5xl sm:text-7xl md:text-[96px] lg:text-7xl">Grow.</h2>
+                        <h2 class="font-semibold text-5xl sm:text-7xl md:text-7xl lg:text-7xl ps-4 sm:ps-0">Grow.</h2>
                     </div>
-                    <button class="btn-primary">Get to
-                        know us <i class=""></i></button>
+                    <a href="#gallery" class="btn-primary mt-6">Get to know us <i class=""></i></a>
                 </div>
             </div>
-            <div class="w-full lg:w-[49%] xl:w-[60%]">
-                <div class="w-full flex flex-nowrap justify-start h-[400px] gap-2 md:gap-4">
+            <div class="w-full mt-4 md:mt-0 md:w-1/2 lg:w-3/5">
+                <div class="w-full flex flex-nowrap justify-start h-full gap-2 md:gap-4">
                     <input type="radio" name="slide" id="c1" class="hidden radio-check" checked>
-                    <label for="c1" class="card-hero  bg-[url('image/foto.jpg')]">
-                    </label>
+                    <label for="c1"
+                        class="card-hero bg-[url('image/foto.jpg')] h-[250px] sm:h-[400px] md:h-[375px] lg:h-[400px] xl:h-[500px] bg-cover bg-center"></label>
                     <input type="radio" name="slide" id="c2" class="hidden radio-check">
-                    <label for="c2" class="card-hero  bg-[url('image/foto.jpg')]">
-                    </label>
+                    <label for="c2"
+                        class="card-hero bg-[url('image/foto.jpg')] h-[250px] sm:h-[400px] md:h-[375px] lg:h-[400px] xl:h-[500px] bg-cover bg-center"></label>
                 </div>
             </div>
+
         </div>
     </section>
-    {{-- end: Hero Section --}}
-    {{-- start: Gallery --}}
     <section id="gallery">
         <div
-            class="max-w-full flex flex-wrap mt-10 md:mt-28 lg:mt-36 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 gap-y-3 sm:gap-y-4 lg:gap-y-8">
+            class="max-w-full flex flex-wrap mt-10 md:mt-16 lg:mt-24 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 gap-y-3 sm:gap-y-4 lg:gap-y-8">
             <div class="w-full text-center mb-3 lg:mb-4">
                 <h2 class="font-semibold text-sm sm:text-lg md:text-xl xl:text-2xl"><span
                         class="bg-amber-100 rounded-lg p-2 lg:p-3">Ngetrip</span> Nang <span
@@ -73,8 +70,6 @@
             </div>
         </div>
     </section>
-    {{-- end: Gallery --}}
-    {{-- start: kata-kata --}}
     <section id="kata-kata">
         <div class="max-w-full flex flex-wrap mt-4 md:mt-8 lg:mt-12 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 gap-y-3 mb-20">
             <div class="w-full text-center mb-3 lg:mb-6">
@@ -86,12 +81,12 @@
                 <div class="wrapper">
                     <i id="left" class="fa-solid fa-angle-left"></i>
                     <ul class="carousel">
-                        @foreach($katakata as $item)
+                        @foreach ($katakata as $item)
                             <li class="card">
                                 <div class="sub-card">
-                                    {{$item->kata_kata}}
+                                    {{ $item->kata_kata }}
                                 </div>
-                                <h2>{{$item->nama}}</h2>
+                                <h2>{{ $item->nama }}</h2>
                             </li>
                         @endforeach
                     </ul>
@@ -100,19 +95,6 @@
             </div>
         </div>
     </section>
-    {{-- end: kata-kata --}}
-    {{-- start: Tombol Munggah --}}
-    <section id="up-button" class="hidden z-50">
-        <div class="group fixed w-12 h-12 rounded-full bg-white border border-primary bottom-16 right-5 cursor-pointer ">
-            <div
-                class="text-primary w-full h-full rounded-full flex items-center justify-center transition-all duration-300 ease-in-out translate-y-0 group-hover:-translate-y-2">
-                <a href="#">
-                    <i class="ri-arrow-up-s-line text-xl"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-    {{-- end: Tombol Munggah --}}
 
     <script>
         const wrapper = document.querySelector(".wrapper");

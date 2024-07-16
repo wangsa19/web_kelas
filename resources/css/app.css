@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 .scroll-smooth {
     behavior: smooth;
 }
@@ -13,7 +11,6 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-/* start: header */
 .navbar-fixed {
     @apply fixed z-[9999] bg-white bg-opacity-20;
     backdrop-filter: blur(10px);
@@ -54,20 +51,14 @@ body {
     box-shadow: 4px 4px 0 rgba(0, 0, 0, 1);
 }
 
-/* end: header */
-
-/* start: main */
-/* section: hero */
 .card-hero {
-    @apply w-[80px] rounded-2xl bg-cover cursor-pointer overflow-hidden my-[10px] flex items-end shadow-md transition-all duration-600;
+    @apply w-[80px] md:w-[100px] xl:w-[120px] rounded-xl sm:rounded-2xl bg-cover cursor-pointer overflow-hidden my-[10px] flex items-end shadow-md transition-all duration-600;
 }
 
 .radio-check:checked+label {
-    @apply w-[600px];
+    @apply w-[600px] md:w-[500px] xl:w-[800px];
 }
 
-/* endsection: hero */
-/* section: katakata */
 .wrapper {
     @apply max-w-[1100px] w-full mx-auto relative;
 }
@@ -141,15 +132,10 @@ body {
     }
 }
 
-/* endsection: katakata */
-/* end: main */
-/* galery */
 .custom-file-input::file-selector-button {
     background-color: #ff6d59;
     color: #fff;
     border: none;
     border-radius: 5px;
-    /* Tampilan sudut */
     cursor: pointer;
-    /* Menjadikan kursor menjadi tangan saat diarahkan */
 }

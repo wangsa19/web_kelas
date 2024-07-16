@@ -19,10 +19,10 @@
                 <div class="w-full flex flex-nowrap justify-start h-full gap-2 md:gap-4">
                     <input type="radio" name="slide" id="c1" class="hidden radio-check" checked>
                     <label for="c1"
-                        class="card-hero bg-[url('image/foto.jpg')] h-[250px] sm:h-[400px] md:h-[375px] lg:h-[400px] xl:h-[500px] bg-cover bg-center"></label>
+                        class="card-hero bg-[url('image/poto_kelas1.jpg')] h-[250px] sm:h-[400px] md:h-[375px] lg:h-[400px] xl:h-[500px] bg-cover bg-center"></label>
                     <input type="radio" name="slide" id="c2" class="hidden radio-check">
                     <label for="c2"
-                        class="card-hero bg-[url('image/foto.jpg')] h-[250px] sm:h-[400px] md:h-[375px] lg:h-[400px] xl:h-[500px] bg-cover bg-center"></label>
+                        class="card-hero bg-[url('image/poto_kelas2.png')] h-[250px] sm:h-[400px] md:h-[375px] lg:h-[400px] xl:h-[500px] bg-cover bg-center"></label>
                 </div>
             </div>
 

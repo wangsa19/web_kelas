@@ -983,6 +983,26 @@ video {
   background-image: url('image/view-villa-l.jpg');
 }
 
+.bg-\[url\(\'image\/\'\)\] {
+  background-image: url('image/');
+}
+
+.bg-\[url\(\'image\/poto_kelas\'\)\] {
+  background-image: url('image/poto_kelas');
+}
+
+.bg-\[url\(\'image\/poto_kelas1\'\)\] {
+  background-image: url('image/poto_kelas1');
+}
+
+.bg-\[url\(\'image\/poto_kelas1\.jpg\'\)\] {
+  background-image: url('image/poto_kelas1.jpg');
+}
+
+.bg-\[url\(\'image\/poto_kelas2\.png\'\)\] {
+  background-image: url('image/poto_kelas2.png');
+}
+
 .bg-cover {
   background-size: cover;
 }

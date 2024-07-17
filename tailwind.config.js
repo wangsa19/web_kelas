@@ -21,6 +21,7 @@ export default {
             },
             transitionTimingFunction: {
                 "io-card": "cubic-bezier(.28, -0.03, 0, .99)",
+                'in-out-back': 'cubic-bezier(0.68, -0.55, 0.27, 1.55)',
             },
         },
     },

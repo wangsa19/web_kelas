@@ -52,11 +52,11 @@ body {
 }
 
 .card-hero {
-    @apply w-[80px] md:w-[100px] xl:w-[120px] rounded-xl sm:rounded-2xl bg-cover cursor-pointer overflow-hidden my-[10px] flex items-end shadow-md transition-all duration-600;
+    @apply w-[80px] md:w-[100px] xl:w-[120px] 2xl:w-[150px] rounded-xl sm:rounded-2xl bg-cover cursor-pointer overflow-hidden my-[10px] flex items-end shadow-md transition-all duration-600;
 }
 
 .radio-check:checked+label {
-    @apply w-[600px] md:w-[500px] xl:w-[800px];
+    @apply w-[600px] md:w-[500px] xl:w-[800px] 2xl:w-[1200px];
 }
 
 .wrapper {
@@ -103,15 +103,15 @@ body {
 }
 
 .carousel>.card>.sub-card {
-    @apply bg-white w-full h-full rounded-xl mb-2 flex cursor-pointer items-center justify-center flex-col p-4 text-primary;
+    @apply bg-white w-full h-full rounded-xl mb-2 flex cursor-pointer items-center justify-center text-center p-4 text-primary;
 }
 
 .card>h2 {
     @apply font-medium text-lg lg:text-2xl mt-1;
 }
 
-.card>span {
-    @apply text-[#6a6d78] text-base sm:text-lg lg:text-xl text-center mb-auto mt-36;
+.sub-card>span {
+    @apply text-[#6a6d78] text-base sm:text-lg lg:text-xl text-center;
 }
 
 @media screen and (max-width: 1024px) {

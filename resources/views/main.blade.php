@@ -2,7 +2,7 @@
 @section('content')
     <section id="hero">
         <div class="max-w-full flex flex-wrap items-center mt-20 md:mt-28 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 bg-white">
-            <div class="w-full md:w-1/2 lg:w-2/5">
+            <div class="w-full lg:w-2/5">
                 <div class="w-full flex flex-wrap">
                     <div
                         class="w-full grid grid-cols-1 gap-y-6 sm:gap-y-8 md:gap-y-10 lg:gap-y-12 xl:gap-y-8 md:pe-4 lg:pe-8">
@@ -15,14 +15,14 @@
                     <a href="#gallery" class="btn-primary mt-6">Get to know us <i class=""></i></a>
                 </div>
             </div>
-            <div class="w-full mt-4 md:mt-0 md:w-1/2 lg:w-3/5">
-                <div class="w-full flex flex-nowrap justify-start h-full gap-2 md:gap-4">
+            <div class="w-full mt-4 md:mt-0 lg:w-3/5">
+                <div class="w-full flex flex-nowrap justify-center h-full gap-2 md:gap-4">
                     <input type="radio" name="slide" id="c1" class="hidden radio-check" checked>
                     <label for="c1"
-                        class="card-hero bg-[url('image/poto_kelas1.jpg')] h-[250px] sm:h-[400px] md:h-[375px] lg:h-[400px] xl:h-[500px] bg-cover bg-center"></label>
+                        class="card-hero bg-[url('image/poto_kelas1.jpg')] h-[250px] sm:h-[400px] md:h-[375px] lg:h-[400px] xl:h-[500px] 2xl:h-[600px] bg-cover bg-center"></label>
                     <input type="radio" name="slide" id="c2" class="hidden radio-check">
                     <label for="c2"
-                        class="card-hero bg-[url('image/poto_kelas2.png')] h-[250px] sm:h-[400px] md:h-[375px] lg:h-[400px] xl:h-[500px] bg-cover bg-center"></label>
+                        class="card-hero bg-[url('image/poto_kelas2.png')] h-[250px] sm:h-[400px] md:h-[375px] lg:h-[400px] xl:h-[500px] 2xl:h-[600px] bg-cover bg-center"></label>
                 </div>
             </div>
 
@@ -74,7 +74,7 @@
         <div class="max-w-full flex flex-wrap mt-4 md:mt-8 lg:mt-12 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 gap-y-3 mb-20">
             <div class="w-full text-center mb-3 lg:mb-6">
                 <h2 class="font-semibold text-sm sm:text-lg md:text-xl xl:text-2xl">
-                    <span class="bg-blue-100 rounded-lg p-2 lg:p-3">Motivasi</span> Arek Arek !
+                    <span class="bg-blue-100 rounded-lg p-2 lg:p-3">Motivasi</span> Arek-Arek !
                 </h2>
             </div>
             <div class="w-full flex items-center justify-center">
@@ -84,7 +84,7 @@
                         @foreach ($katakata as $item)
                             <li class="card">
                                 <div class="sub-card">
-                                    {{ $item->kata_kata }}
+                                    <span>{{ $item->kata_kata }}</span>
                                 </div>
                                 <h2>{{ $item->nama }}</h2>
                             </li>

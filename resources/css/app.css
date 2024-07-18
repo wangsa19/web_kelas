@@ -114,6 +114,10 @@ body {
     @apply text-[#6a6d78] text-base sm:text-lg lg:text-xl text-center;
 }
 
+.active-g{
+    @apply border-2 border-black;
+}
+
 @media screen and (max-width: 1024px) {
     .wrapper>.carousel {
         grid-auto-columns: calc((100% / 3) - 12px);

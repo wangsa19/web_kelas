@@ -6,20 +6,19 @@
         </div>
 
         <div class="flex justify-center gap-1 md:gap-10 my-5 md:my-20 px-4">
-            <button id="btn-all"
-                class="border border-2 border-black px-3 md:px-6 md:py-1 rounded-xl text-[11px] md:text-sm">
+            <button id="btn-all" class="active-g filter-button px-3 md:px-6 md:py-1 rounded-xl text-[11px] md:text-sm">
                 All
             </button>
-            <button id="btn-lkmm-pratd" class="px-3 md:px-6 md:py-1 rounded-xl text-[10px] md:text-sm">
+            <button id="btn-lkmm-pratd" class="filter-button px-3 md:px-6 md:py-1 rounded-xl text-[10px] md:text-sm">
                 LKMM Pra-TD
             </button>
-            <button id="btn-lkmmtd" class="px-3 md:px-6 md:py-1 rounded-xl text-[10px] md:text-sm">
+            <button id="btn-lkmmtd" class="filter-button px-3 md:px-6 md:py-1 rounded-xl text-[10px] md:text-sm">
                 LKMM TD
             </button>
-            <button id="btn-makrab" class="px-3 md:px-6 md:py-1 rounded-xl text-[10px] md:text-sm">
+            <button id="btn-makrab" class="filter-button px-3 md:px-6 md:py-1 rounded-xl text-[10px] md:text-sm">
                 Makrab
             </button>
-            <button id="btn-random" class="px-3 md:px-6 md:py-1 rounded-xl text-[10px] md:text-sm">
+            <button id="btn-random" class="filter-button px-3 md:px-6 md:py-1 rounded-xl text-[10px] md:text-sm">
                 Random
             </button>
         </div>
@@ -87,24 +86,37 @@
             });
         }
 
+        function setActiveButton(activeButton) {
+            var buttons = document.querySelectorAll('.filter-button');
+            buttons.forEach(button => {
+                button.classList.remove('active-g');
+            });
+            activeButton.classList.add('active-g');
+        }
+
         document.getElementById('btn-all').addEventListener('click', function() {
             filterGallery('all');
+            setActiveButton(this);
         });
 
         document.getElementById('btn-lkmm-pratd').addEventListener('click', function() {
             filterGallery('LKMM Pra-TD');
+            setActiveButton(this);
         });
 
         document.getElementById('btn-lkmmtd').addEventListener('click', function() {
             filterGallery('LKMM TD');
+            setActiveButton(this);
         });
 
         document.getElementById('btn-makrab').addEventListener('click', function() {
             filterGallery('Makrab');
+            setActiveButton(this);
         });
 
         document.getElementById('btn-random').addEventListener('click', function() {
             filterGallery('Random');
+            setActiveButton(this);
         });
     </script>
 @endsection

@@ -4,7 +4,7 @@
             <div class="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
                 <a href="#home" class="font-bold font-lucidaSans text-lg text-primary block py-6">D3Itech.</a>
             </div>
-            <div class="flex items-center px-4">
+            <div class="flex items-center">
                 <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
                     <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
                     <span class="hamburger-line transition duration-300 ease-in-out"></span>
@@ -12,15 +12,18 @@
                 </button>
                 <nav id="nav-menu"
                     class="hidden absolute py-3 bg-white shadow-xl border border-slate-200 lg:border-none rounded-[18px] max-w-[200px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
-                    <ul class="block px-3 lg:flex">
-                        <li class="text-dark rounded-lg {{ $title == 'main' ? 'nav-active' : '' }}">
-                            <a href="/" class="text-base py-2 mx-6 flex">Home</a>
+                    <ul class="block px-4 lg:px-0 lg:flex lg:gap-4">
+                        <li class="text-dark {{ $title == 'main' ? 'nav-active' : '' }}">
+                            <a href="/"
+                                class="text-base py-2 mx-6 flex font-normal rounded-lg hover:underline">Home</a>
                         </li>
-                        <li class="text-dark rounded-lg {{ $title == 'profil' ? 'nav-active' : '' }}">
-                            <a href="/profile" class="text-base py-2 mx-6 flex">Profile</a>
+                        <li class="text-dark {{ $title == 'profil' ? 'nav-active' : '' }}">
+                            <a href="/profile"
+                                class="text-base py-2 mx-6 flex font-normal rounded-lg hover:underline">Profile</a>
                         </li>
-                        <li class="text-dark rounded-lg {{ $title == 'gallery' ? 'nav-active' : '' }}">
-                            <a href="/gallery" class="text-base py-2 mx-6 flex">Gallery</a>
+                        <li class="text-dark {{ $title == 'gallery' ? 'nav-active' : '' }}">
+                            <a href="/gallery"
+                                class="text-base py-2 mx-6 flex font-normal rounded-lg hover:underline">Gallery</a>
                         </li>
                     </ul>
                 </nav>

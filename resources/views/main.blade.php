@@ -12,17 +12,19 @@
                             Learn.</h2>
                         <h2 class="font-semibold text-5xl sm:text-7xl md:text-7xl lg:text-7xl ps-4 sm:ps-0">Grow.</h2>
                     </div>
-                    <a href="#gallery" class="btn-primary mt-6">Get to know us <i class=""></i></a>
+                    <a href="#" onclick="goto()" class="btn-primary mt-6">Get to know us <i class=""></i></a>
                 </div>
             </div>
             <div class="w-full mt-4 md:mt-0 lg:w-3/5">
                 <div class="w-full flex flex-nowrap justify-center h-full gap-2 md:gap-4">
                     <input type="radio" name="slide" id="c1" class="hidden radio-check" checked>
-                    <label for="c1"
-                        class="card-hero bg-[url('image/poto_kelas1.jpg')] h-[250px] sm:h-[400px] md:h-[375px] lg:h-[400px] xl:h-[500px] 2xl:h-[600px] bg-cover bg-center"></label>
+                    <label for="c1" class="card-hero bg-[url('image/poto_kelas1.jpg')]"></label>
                     <input type="radio" name="slide" id="c2" class="hidden radio-check">
-                    <label for="c2"
-                        class="card-hero bg-[url('image/poto_kelas2.png')] h-[250px] sm:h-[400px] md:h-[375px] lg:h-[400px] xl:h-[500px] 2xl:h-[600px] bg-cover bg-center"></label>
+                    <label for="c2" class="card-hero bg-[url('image/poto_kelas2.png')]"></label>
+                    <input type="radio" name="slide" id="c3" class="hidden radio-check">
+                    <label for="c3" class="card-hero bg-[url('image/foto_paralayang.jpg')]"></label>
+                    <input type="radio" name="slide" id="c4" class="hidden radio-check">
+                    <label for="c4" class="card-hero bg-[url('image/makrab.jpg')]"></label>
                 </div>
             </div>
 
@@ -40,7 +42,7 @@
                 <div class="w-full md:w-1/2">
                     <div class="rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden min-h-[200px]">
                         <div class="bg-[url('image/view-villa-l.jpg')] bg-cover">
-                            <div class="h-[200px] sm:h-[300px] md:h-[200px] lg:h-[300px] w-full"></div>
+                            <div class="h-[200px] sm:h-[300px] md:h-[200px] lg:h-[300px] xl:h-[400px] w-full"></div>
                         </div>
                     </div>
                 </div>
@@ -63,7 +65,7 @@
                 <div class="w-full md:w-1/2">
                     <div class="rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden min-h-[200px]">
                         <div class="bg-[url('image/view-malang.jpg')] bg-cover">
-                            <div class="h-[200px] sm:h-[300px] md:h-[200px] lg:h-[300px] w-full"></div>
+                            <div class="h-[200px] sm:h-[300px] md:h-[200px] lg:h-[300px] xl:h-[400px] w-full"></div>
                         </div>
                     </div>
                 </div>
@@ -71,7 +73,7 @@
         </div>
     </section>
     <section id="kata-kata">
-        <div class="max-w-full flex flex-wrap mt-4 md:mt-8 lg:mt-12 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 gap-y-3 mb-20">
+        <div class="max-w-full flex flex-wrap mt-4 md:mt-8 lg:mt-12 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 gap-y-3 mb-10">
             <div class="w-full text-center mb-3 lg:mb-6">
                 <h2 class="font-semibold text-sm sm:text-lg md:text-xl xl:text-2xl">
                     <span class="bg-blue-100 rounded-lg p-2 lg:p-3">Motivasi</span> Arek-Arek !
@@ -157,8 +159,7 @@
                 carousel.scrollLeft = carousel.scrollWidth - 2 * carousel.offsetWidth;
                 carousel.classList.remove("no-transition");
             } else if (
-                carousel.scrollLeft ===
-                carousel.scrollWidth - carousel.offsetWidth
+                carousel.scrollLeft + carousel.offsetWidth >= carousel.scrollWidth
             ) {
                 carousel.classList.add("no-transition");
                 carousel.scrollLeft = carousel.offsetWidth;
@@ -175,5 +176,11 @@
         carousel.addEventListener("scroll", infinityScroll);
         wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
         wrapper.addEventListener("mouseleave", autoPlay);
+
+        function goto () {
+            const motivasi = document.getElementById('kata-kata');
+            motivasi.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'});
+            console.log()
+        }
     </script>
 @endsection

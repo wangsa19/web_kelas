@@ -52,7 +52,7 @@ body {
 }
 
 .card-hero {
-    @apply w-[80px] md:w-[100px] xl:w-[120px] 2xl:w-[150px] rounded-xl sm:rounded-2xl bg-cover cursor-pointer overflow-hidden my-[10px] flex items-end shadow-md transition-all duration-600;
+    @apply w-[70px] lg:w-[100px] xl:w-[120px] 2xl:w-[150px] h-[250px] xs:h-[350px] sm:h-[400px] md:h-[375px] lg:h-[350px] xl:h-[450px] 2xl:h-[500px] bg-cover bg-center rounded-2xl sm:rounded-2xl cursor-pointer overflow-hidden my-[10px] flex items-end shadow-md transition-all duration-600;
 }
 
 .radio-check:checked+label {
@@ -63,26 +63,26 @@ body {
     @apply max-w-[1100px] w-full mx-auto relative;
 }
 
-.wrapper>i {
+.wrapper i {
     @apply h-[50px] w-[50px] bg-white text-center leading-[50px] rounded-[50%] cursor-pointer absolute top-[50%] -translate-y-[50%] shadow-md;
 }
 
-.wrapper>i:first-child {
+.wrapper i:first-child {
     @apply -left-5;
 }
 
-.wrapper>i:last-child {
+.wrapper i:last-child {
     @apply -right-5;
 }
 
-.wrapper>.carousel {
+.wrapper .carousel {
     @apply grid grid-flow-col gap-4 scroll-smooth overflow-x-auto;
     grid-auto-columns: calc((100% / 4) - 12px);
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
 }
 
-.carousel> :where(.card, .img) {
+.carousel :where(.card, .img) {
     @apply flex items-center justify-center;
 }
 
@@ -91,49 +91,43 @@ body {
 }
 
 .carousel.dragging {
-    @apply snap-none;
+    @apply snap-none scroll-auto;
 }
 
-.carousel.dragging .card {
+.carousel.dragging .card .sub-card {
     @apply cursor-grab select-none;
 }
 
-.carousel>.card {
+.carousel .card {
     @apply snap-start h-[342px] list-none bg-blue-100 rounded-xl flex cursor-pointer items-center justify-end flex-col text-primary pt-2 px-2 pb-4;
 }
 
-.carousel>.card>.sub-card {
+.carousel .card .sub-card {
     @apply bg-white w-full h-full rounded-xl mb-2 flex cursor-pointer items-center justify-center text-center p-4 text-primary;
 }
 
-.card>h2 {
+.card h2 {
     @apply font-medium text-lg lg:text-2xl mt-1;
 }
 
-.sub-card>span {
+.card span {
     @apply text-[#6a6d78] text-base sm:text-lg lg:text-xl text-center;
 }
 
-.active-g{
-    @apply border-2 border-black;
-}
-
-@media screen and (max-width: 1024px) {
-    .wrapper>.carousel {
-        grid-auto-columns: calc((100% / 3) - 12px);
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .wrapper>.carousel {
+@media screen and (max-width: 900px) {
+    .wrapper .carousel {
         grid-auto-columns: calc((100% / 2) - 12px);
     }
 }
 
-@media screen and (max-width: 640px) {
-    .wrapper>.carousel {
+@media screen and (max-width: 600px) {
+    .wrapper .carousel {
         grid-auto-columns: 100%;
     }
+}
+
+.active-g {
+    @apply border-2 border-black;
 }
 
 .custom-file-input::file-selector-button {
